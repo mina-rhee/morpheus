@@ -2,7 +2,7 @@ INCLUDE=.
 #use hc on RT
 #CC=hc
 CC=cc
-CC=gcc
+CC=gcc -Wno-return-type
 #CFLAGS= -O -I${INCLUDE}   -g
 CFLAGS= -O -I${INCLUDE}  
 LINTFLAGS= -I${INCLUDE} -DDEBUG

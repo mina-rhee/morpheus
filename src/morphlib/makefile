@@ -3,7 +3,7 @@ CFLAGS= -O2   -I${INCLUDE}
 MORPHLIB=morphlib.a
 RM=rm
 CC=cc
-CC=gcc
+CC=gcc -Wno-return-type
 
 MORPHOBJ= adddomain.o \
 addninfix.o \

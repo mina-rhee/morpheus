@@ -1,11 +1,11 @@
-LEXLIB = -lfl
+LEXLIB = -ll
 
 INCLUDE=../includes
 #CFLAGS= -O2 -I${INCLUDE} 
 CFLAGS= -ggdb3 -I${INCLUDE}
 RM=rm
 CC=cc
-CC=gcc
+CC=gcc -Wno-return-type
 LEX=flex
 
 ANALLIB=../anal/anal.a

@@ -10,14 +10,14 @@ DICTOBJ=dictio.o derivio.o compnoun.o
 #use hc on RT
 #CC=hc
 CC=cc
-CC=gcc
+CC=gcc -Wno-return-type
 #CFLAGS= -O -I${INCLUDE}   -g
 #CFLAGS= -O -I${INCLUDE}   -Wstrict-prototypes   -Wmissing-prototypes
 CFLAGS= -O2 -I${INCLUDE}   
 LINTFLAGS= -I${INCLUDE} -DDEBUG
 RM=/bin/rm -f
 
-LOADLIBES= -lfl
+LOADLIBES= -ll
 
 ALL=gkdict.a indexcomps indexnoms indexvbs  newlems newlems2 setquant splitlems splitlat latvb conj1 combitype latnom fixhesc fixgend
 

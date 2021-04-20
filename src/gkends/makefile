@@ -3,7 +3,7 @@ CFLAGS= -O2 -I${INCLUDE}
 RM=rm
 ENDLIB=gkends.a
 CC=cc
-CC=gcc
+CC=gcc -Wno-return-type
 
 
 GREEKLIB=../greeklib/greeklib.a

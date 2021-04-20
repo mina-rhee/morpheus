@@ -1,5 +1,5 @@
 BINDIR=/greek/tar/tlgsend/bin
-CC=gcc
+CC=gcc -Wno-return-type
 GREEKLIB=../greeklib/greeklib.a
 RM=/bin/rm
 #note that you need to define SYS5 if you are compiling under
