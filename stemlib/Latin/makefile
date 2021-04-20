@@ -33,7 +33,7 @@ stemind/vbind:	stemsrc/vbs.latin
 	cat ${VBFILES} | \
 	    perl -pe 's/([a-z])([aei])_v[ \t]+perfstem/$$1\t$$2vperf/g;' > \
 	    conjfile
-	do_conj -L
+	# do_conj -L
 	mv conjfile.short /tmp/vbmorph
 	indexvbs -L
 
